@@ -24,14 +24,23 @@
     </tbody>
   </table>
 
-  <form action="#" id="add-word" method="post">
-    <input type="text" name="word" id="word" />
+  <form id="add-word" method="POST">
+    <input type="text" name="word" id="word" autofocus />
     <button>Check</button>
   </form>
 
+  <p>
+    score: <span id="score">0</span><br />
+    timer: <span id="timer"></span>
+  </p>
+
+  <p id="msg"></p>
+
+  <ul id="words"></ul>
+
   <script src="https://unpkg.com/jquery"></script>
   <script src="https://unpkg.com/axios/dist/axios.js"></script>
-  <script src="static/app.js"></script>
+  <script src="/static/app.js"></script>
 </body>
 
 </html>
